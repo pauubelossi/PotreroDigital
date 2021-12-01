@@ -1,0 +1,164 @@
+/*--css globales--*/ 
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none; /*para sacarle el estilo que ya viene de la letra*/
+}
+img, video{
+    width: 100%;
+}
+textarea{
+    resize: none;
+}
+
+/*--CSS de la barrra de navegación--*/
+.navegacion{
+    display: flex;  /*flex box*/
+    justify-content: space-between; /*flex box*/
+    background-color: cadetblue;
+    font-size: 20px;
+}
+.menu{
+    display: flex;
+    padding-top: 15px;
+}
+
+.menu li a{
+    padding: 20px;
+    color: black;
+}
+
+/*Pseudo Clases*/
+.menu li a:hover{
+    text-decoration: underline;
+    color: red;
+}
+
+/*---- css imagen de fondo ----*/
+.fondo{
+    background-image: url('../img/fondo\ 5.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 600px;
+    ;
+}
+.titulo{
+    font-size: 40px; /*medidas absolutas*/
+    /*font-family: Arial, Helvetica, sans-serif;*/
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    color: white;
+    background-color: teal;
+    height: 80px;
+    padding-top: 20px;
+    border: 5px whitesmoke;
+}
+/*las clases con punto antes*/
+.subTitulo{
+    /*font-family: Verdana, Geneva, Tahoma, sans-serif;*/
+    font-size: 20px;
+    text-align: center;
+}
+.parrafo{
+    font-size: 20px; /*tamaño de fuente de los parrafos son de 16 px*/
+    text-align: justify;
+    color: white;
+    background-color: rgb(212, 152, 236);
+    padding: 20px;
+}
+/*-- css footer --*/
+.footer{
+    display: flex;
+    justify-content: space-between;
+    background-color:#BBDEFB;
+    color: #212121;
+}
+.enlaces a{
+    color: #212121;
+    padding-right: 30px;
+}
+
+/*--- CSS página de Contacto ---*/
+.contacto{
+    display: flex;
+    justify-content: space-around;
+}
+input,label{
+    font-size: 20px;
+}
+.formulario{ 
+    text-align: center;
+    background-image: url('../img/Mendoza.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.banner {
+    margin: 0 auto;
+    width: 1200px;
+    height: 400px;
+    background-color: #fff;
+    overflow: hidden;
+    position: relative;
+}
+.banner .imgban{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    transition: all ease-in-out 500ms;
+    -webkit-transition: all ease-in-out 500ms;
+    -moz-transition: all ease-in-out 500ms;
+    -o-transition: all ease-in-out 500ms;
+}
+.banner #imgban3 {
+    background-image: url('../img/Ilhabella.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.banner #imgban2 {
+    background-image: url('../img/Montevideo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.banner #imgban1 {
+    background-image: url('../img/Congreso.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.imgbanbtn {
+    width: 40px;
+    height: 40px;
+    background-color: #000;
+    border-radius: 4px;
+    position:absolute;
+    top: 180px;
+    z-index: 2000;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.imgbanbtn :hover {
+    opacity: 0.9;
+}
+.imgbanbtn-prev {
+    left: 5px;
+    background-image: url("img/arrow-left.png");
+    background-size: 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.imgbanbtn-next {
+    right: 5px;
+    background-image: url("img/arrow-right.png");
+    background-size: 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
